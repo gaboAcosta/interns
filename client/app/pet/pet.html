@@ -1,0 +1,32 @@
+<div>
+  <h1>Contacts</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Telephone
+        </th>
+        <th>
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="pet in $ctrl.pets">
+        <td>
+          {{pet.name}}
+        </td>
+        <td>
+          {{pet.owner}}
+        </td>
+        <td>
+          <a href="#" ng-click="$ctrl.destroy(pet._id)">Delete</a>
+          <a href="#">Update</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

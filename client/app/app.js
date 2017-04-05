@@ -27,6 +27,7 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import contact from './contact/contact.component'
+import pet from './pet/pet.component'
 
 import './app.scss';
 
@@ -46,7 +47,8 @@ angular.module('internsApp', [
   constants,
   socket,
   util,
-  contact
+  contact,
+  pet
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
