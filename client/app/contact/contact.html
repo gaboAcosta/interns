@@ -1,0 +1,32 @@
+<div>
+  <h1>Contacts</h1>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Telephone
+        </th>
+        <th>
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="contact in $ctrl.contacts">
+        <td>
+          {{contact.name}}
+        </td>
+        <td>
+          {{contact.telephone}}
+        </td>
+        <td>
+          <a href="#" ng-click="$ctrl.destroy(contact._id)">Delete</a>
+          <a href="#">Update</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
